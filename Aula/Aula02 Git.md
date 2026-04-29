@@ -61,7 +61,7 @@ git commit -m "dia 2: criar o parágrafo"
 
 ---
 
-## 📅 Dia 3 — Adicionar uma logo
+## 📅 Dia 3 — Adicionar estilo css
 
 Tarefa (Feature): Adicionar no `index.html` uma cor vermelha para o título.
 
@@ -107,7 +107,7 @@ git checkout b2f1d04
 
 > ⚠️ Substitua `b963ef4` pelo código que apareceu **no seu** `git log`.
 
-Agora abra o arquivo `index.html` e veja: **a logo sumiu**. O arquivo voltou exatamente como estava no Dia 2, com o botão melhorado mas sem a logo.
+Agora abra o arquivo `index.html` e veja: **o estilo css sumiu**. O arquivo voltou exatamente como estava no Dia 2.
 
 ---
 
@@ -121,7 +121,7 @@ git checkout master
 
 > Se o comando acima não funcionar, tente `git checkout main`.
 
-Abra o `index.html` — a logo voltou. Você está no presente novamente.
+Abra o `index.html` — o estilo voltou. Você está no presente novamente.
 
 ---
 
@@ -130,7 +130,7 @@ Abra o `index.html` — a logo voltou. Você está no presente novamente.
 - [ ] Criei os 3 commits (um por dia)
 - [ ] Rodei `git log --oneline` e vi os 3 commits na lista
 - [ ] Usei `git checkout` com o código do Dia 2
-- [ ] Abri o arquivo e confirmei que a logo havia sumido
+- [ ] Abri o arquivo e confirmei que estilo havia sumido
 - [ ] Voltei para o presente com `git checkout main`
 
 ---
