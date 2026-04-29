@@ -24,7 +24,7 @@ Criar um projeto do zero, salvar três versões diferentes e ver o histórico de
 ### Parte 1 — Criar o projeto
 
 1. Crie uma pasta chamada `diario-git` em qualquer lugar do seu computador
-2. Abra o terminal dentro dessa pasta
+2. Utilise o Vscode (abrir a pasta  `diario-git` e selecione no menu terminal), ou utilise o terminal (abra o terminal dentro dessa pasta)
 3. Rode o comando abaixo para iniciar o repositório:
 
 ```
@@ -41,7 +41,7 @@ git init
 2. Escreva dentro dele:
 
 ```
-Dia 1: Aprendi a usar o Git hoje!
+Dia 1: Minha primeira tarefa como dev.
 ```
 
 3. Salve o arquivo e volte ao terminal
@@ -51,18 +51,26 @@ Dia 1: Aprendi a usar o Git hoje!
 git status
 ```
 
-> Você verá `diario.txt` em vermelho — ele ainda não foi marcado.
+o Git “viu mudanças, mas não foi avisado”
+É como escrever algo no git e não apertar salvar.
+
+> Você verá `diario.txt` em vermelho — ele ainda não foi salvo mas estã sendo supervisionado.
 
 5. Marque o arquivo:
+
+Aqui você escolheu exatamente o que quer salvar
 
 ```
 git add diario.txt
 ```
 
+
 6. Salve a primeira versão:
 
+Agora será realmente salvo e entrará no histórico do projeto
+
 ```
-git commit -m "criei o diário"
+git commit -m "primeira tarefa"
 ```
 
 ✅ **Resultado esperado:** mensagem confirmando o commit.
@@ -76,14 +84,14 @@ git commit -m "criei o diário"
 1. Abra `diario.txt` e adicione uma nova linha:
 
 ```
-Dia 2: Aprendi o comando git add e git commit.
+Dia 2: Minha segunda tarefa como dev.
 ```
 
 2. Salve e rode:
 
 ```
 git add diario.txt
-git commit -m "adicionei o dia 2"
+git commit -m "segunda tarefa"
 ```
 
 ---
@@ -93,14 +101,14 @@ git commit -m "adicionei o dia 2"
 1. Adicione mais uma linha no arquivo:
 
 ```
-Dia 3: Agora sei ver o histórico com git log!
+Dia 3: Minha terceira tarefa como dev
 ```
 
 2. Salve e rode:
 
 ```
 git add diario.txt
-git commit -m "adicionei o dia 3"
+git commit -m "terceira tarefa"
 ```
 
 ---
@@ -116,9 +124,9 @@ git log --oneline
 ✅ **Resultado esperado:** você verá algo parecido com isso:
 
 ```
-a3f9c12  adicionei o dia 3
-b1e4d08  adicionei o dia 2
-c9a2f77  criei o diário
+a3f9c12  terceira tarefa
+b1e4d08  segunda tarefa
+c9a2f77  primeira tarefa
 ```
 
 Cada linha é uma versão salva, da mais recente para a mais antiga.

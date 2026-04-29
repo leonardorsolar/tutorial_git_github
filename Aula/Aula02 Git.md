@@ -16,7 +16,7 @@
 
 ## 📁 Preparação
 
-Crie uma pasta chamada `projeto-formulario` e abra o terminal dentro dela.
+Crie uma pasta chamada `projeto-html-css` e abra o terminal dentro dela.
 
 ```
 git init
@@ -26,66 +26,54 @@ git init
 
 ## 📅 Dia 1 — Criar o formulário
 
-Crie um arquivo chamado `index.html` e cole o conteúdo abaixo:
+Tarefa (Feature):
+- Crie um arquivo chamado `index.html`
+- Criar um título
+
 
 ```html
-<form>
-  <input type="text" placeholder="Seu nome" />
-  <button>Enviar</button>
-</form>
+<h1>Tag Título<h1>
 ```
 
 Salve o arquivo, volte ao terminal e rode:
 
 ```
 git add index.html
-git commit -m "dia 1: criei o formulário"
+git commit -m "dia 1: criar o título"
 ```
 
 ---
 
 ## 📅 Dia 2 — Melhorar o botão
 
-Abra `index.html` e **substitua** o conteúdo pelo texto abaixo:
+Tarefa (Feature): Adicionar no `index.html` um parágrafo 
 
 ```html
-<form>
-  <input type="text" placeholder="Seu nome" />
-  <button style="background: blue; color: white; padding: 8px 16px;">
-    Enviar agora
-  </button>
-</form>
+<p>Esta é uma tag parágrafo<p>
 ```
 
 Salve e rode:
 
 ```
 git add index.html
-git commit -m "dia 2: melhorei o botão do formulário"
+git commit -m "dia 2: criar o parágrafo"
 ```
 
 ---
 
 ## 📅 Dia 3 — Adicionar uma logo
 
-Abra `index.html` e **substitua** o conteúdo pelo texto abaixo:
+Tarefa (Feature): Adicionar no `index.html` uma cor vermelha para o título.
 
 ```html
-<img src="logo.png" alt="Logo da empresa" />
-
-<form>
-  <input type="text" placeholder="Seu nome" />
-  <button style="background: blue; color: white; padding: 8px 16px;">
-    Enviar agora
-  </button>
-</form>
+<h1 style="color: red">Tag Título<h1>
 ```
 
 Salve e rode:
 
 ```
 git add index.html
-git commit -m "dia 3: adicionei a logo"
+git commit -m "dia 3: adicionar a cor vermelha ao título"
 ```
 
 ---
@@ -99,13 +87,13 @@ git log --oneline
 Você verá algo assim:
 
 ```
-e7c3a91  dia 3: adicionei a logo
-b2f1d04  dia 2: melhorei o botão do formulário
-a9e8c12  dia 1: criei o formulário
+3d8f7c5 (HEAD -> master) dia 3: adicionar a cor vermelha ao título
+b963ef4 dia 2: criar o parágrafo
+978a864 dia 1: criar o título
 ```
 
 > **Copie o código de 7 letras do commit do Dia 2** — você vai precisar dele agora.
-> No exemplo acima, seria `b2f1d04`. No seu computador, o código será diferente.
+> No exemplo acima, seria `b963ef4`. No seu computador, o código será diferente.
 
 ---
 
@@ -117,7 +105,7 @@ Com o código do Dia 2 em mãos, rode:
 git checkout b2f1d04
 ```
 
-> ⚠️ Substitua `b2f1d04` pelo código que apareceu **no seu** `git log`.
+> ⚠️ Substitua `b963ef4` pelo código que apareceu **no seu** `git log`.
 
 Agora abra o arquivo `index.html` e veja: **a logo sumiu**. O arquivo voltou exatamente como estava no Dia 2, com o botão melhorado mas sem a logo.
 
